@@ -8,7 +8,7 @@ const Button = ({label, val, onClick = () => {}, color = BUTTON_COLORS.BLUE}) =>
         <a onClick={() => {
             console.log('onClick', val);
             onClick(val);
-        }} className={`numButton ${color}-button`}>{(label) ? label : val}</a>
+        }} className={`flex circle-button ${color}-button`}>{(label) ? label : val}</a>
     )
 };
 
